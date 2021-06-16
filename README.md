@@ -25,3 +25,13 @@ We used Python, Pandas, SQLite and SQLAlchemy for this analysis.
   -   More interesting weather data could be gatherered by analyzing the following queries:
 
 The total precipitation levels for June and December,
+
+    session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
+
+    session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
+
+The amount of precipitation at the most active station for June and December,
+
+    session.query(Measurement.prcp).filter(Measurement.station == 'USC00519281').filter(extract('month', Measurement.date) == 6).all()
+
+    session.query(Measurement.prcp).filter(Measurement.station == 'USC00519281').filter(extract('month', Measurement.date) == 12).all()
