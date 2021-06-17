@@ -9,7 +9,7 @@ We used Python, Pandas, SQLite and SQLAlchemy for this analysis. The goal of our
 ## Resources
 
   -  Data Sources: hawaii.sqlite
-  -  Software: Python 3.7.7, Anaconda Navigator 1.9.12, Conda 4.8.4, Jupyter Notebook 6.0.3
+  -  Software: Python 3.7.9, Anaconda Navigator, Conda 4.8.4, Jupyter Notebook 6.3.0
 
 ## Results
 
